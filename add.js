@@ -3,42 +3,13 @@ import fs from "fs";
 import { execSync } from "child_process";
 
 (async () => {
-  let list = [
-    {
-      ElectionId: "60",
-      BallotHash: "QmWebRBshpTVBHpSeRcBzUUf3XDtHQD88rUAXQUeXCCRWu",
-    },
-    {
-      ElectionId: "60",
-      BallotHash: "QmWxEGJ4uwNzfhS9dkd6DsTdWQqCh1QVmvMZjfTvV6j5tp",
-    },
-    {
-      ElectionId: "60",
-      BallotHash: "QmdwctMm97xszjFZW2ucEBeBJMphp95kr8nX7cEKEJAd3q",
-    },
-    {
-      ElectionId: "60",
-      BallotHash: "QmaUkdrW77tMqGVtjJ15apUa2mSMPuKKpiPgL7qaWbH9TR",
-    },
-    {
-      ElectionId: "60",
-      BallotHash: "QmQFfrb9SKb5ePXopDzySuNJ5J8JDSFj5Qre7fsyerkUS8",
-    },
-    {
-      ElectionId: "60",
-      BallotHash: "QmaxzXteKmTpirPdFxjqvATCkqHojyPFy5RdGinsLaAVym",
-    },
-    {
-      ElectionId: "60",
-      BallotHash: "QmX9BNC5rXCkb7DUbBE9jHbMQ3vY4Rv1EVf5bawYCFLv6u",
-    },
-  ];
-  const download = async () => {
-    for await (const ele of list) {
-      const url = `https://gateway.pinata.cloud/ipfs/${ele.BallotHash}`;
-      execSync(`curl -X GET ${url}  --output cipher/${ele.BallotHash}`);
-    }
-  };
+  // let list = [];
+  // const download = async () => {
+  //   for await (const ele of list) {
+  //     const url = `https://gateway.pinata.cloud/ipfs/${ele.BallotHash}`;
+  //     execSync(`curl -X GET ${url}  --output cipher/${ele.BallotHash}`);
+  //   }
+  // };
 
   // download();
 
