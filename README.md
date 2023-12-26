@@ -8,7 +8,7 @@ https://gateway.pinata.cloud/ipfs/HASHVALUE 를 통해 웹에서 확인할 수 �
 암호문을 만들 때 사용되는 공개키는 아마존 S3에 저장되어 있습니다.
 현재는 암호문을 유지하지 않고 있습니다.
 
-UosVote는 Microsoft의 node-seal을 이용하고 있습니다. npm install 후 add 함수를
+XXXVote는 Microsoft의 node-seal을 이용하고 있습니다. npm install 후 add 함수를
 실행하면 cipher 폴더 내의 모든 암호문을 읽어 RESULT를 만듭니다.
 
 투표 결과창에 있는 최종 RESULT 파일을 다운로드 받아 두 파일에 대한 해쉬값을 비교
